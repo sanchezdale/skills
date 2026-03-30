@@ -1,0 +1,11 @@
+name: daniel-skills
+description: Personal multi-skill bundle for Codex, Claude Code, and other agents that support standard SKILL.md directories.
+license: Apache-2.0
+repository_name: skills
+skills:
+  - frontend-skill
+  - harness-instrument-repo
+  - harness-audit
+  - harness-plan
+  - harness-spec
+  - harness-validate
