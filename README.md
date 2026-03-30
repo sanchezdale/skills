@@ -1,6 +1,6 @@
 # Skills
 
-This repository is the source of truth for Daniel's reusable agent skills.
+This repository is the source of truth for my agent skills.
 
 It is organized as a multi-skill bundle so the same pack can be installed with
 the `skills` CLI or copied into an agent's local skills directory.
@@ -31,25 +31,25 @@ bundle.yaml
 Once this repo is pushed to GitHub, install all skills from the repo:
 
 ```bash
-npx skills add <owner>/skills --all
+npx skills add sanchezdale/skills --all
 ```
 
 List skills before installing:
 
 ```bash
-npx skills add <owner>/skills --list
+npx skills add sanchezdale/skills --list
 ```
 
 Install a single skill:
 
 ```bash
-npx skills add <owner>/skills --skill harness-instrument-repo
+npx skills add sanchezdale/skills --skill harness-instrument-repo
 ```
 
 Install to specific agents:
 
 ```bash
-npx skills add <owner>/skills --all -a codex -a claude-code
+npx skills add sanchezdale/skills --all -a codex -a claude-code
 ```
 
 The documented repository layout for multi-skill repos is `skills/<name>/SKILL.md`,
