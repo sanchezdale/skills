@@ -17,7 +17,7 @@ permissions:
 jobs:
   dependency-vulnerability-scan:
     name: Dependency vulnerability scan
-    uses: google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml@9a498708959aeaef5ef730655706c5a1df1edbc2
+    uses: google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml@6e4298ebc4db23e847df9b2e2de2939d6f066c67
     permissions:
       actions: read
       contents: read
@@ -53,7 +53,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Run TruffleHog
-        uses: trufflesecurity/trufflehog@37b77001d0174ebec2fcca2bd83ff83a6d45a3ab
+        uses: trufflesecurity/trufflehog@20652fbbdefffcdaa493a5bf57ab2ac6b1db715b
         with:
           path: ./
           extra_args: --results=verified
@@ -67,7 +67,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Run zizmor
-        uses: zizmorcore/zizmor-action@b572f7b1a1c2d41efaab43d504f68d215c3cd727
+        uses: zizmorcore/zizmor-action@3dc1ecc9bcb9e94e9b2c709687979e1298497054
         with:
           advanced-security: false
           annotations: true
