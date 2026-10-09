@@ -1,0 +1,25 @@
+version: 2
+
+# The only Dependabot-supported ecosystem used here is GitHub Actions, so the
+# weekly version updates use a single wildcard group covering all update types.
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
+        update-types:
+          - "major"
+          - "minor"
+          - "patch"
+      # Security updates are triggered by Dependabot alerts and are not bound to
+      # the weekly version-update schedule.
+      security-updates:
+        applies-to: "security-updates"
+        patterns:
+          - "*"
